@@ -11,7 +11,7 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "node-fetch": "^2.6.1",
-    "stremio-addon-sdk": "^0.7.1",
+    "stremio-addon-sdk": "^1.6.10",
     "unzipper": "^0.10.11"
   }
 }
