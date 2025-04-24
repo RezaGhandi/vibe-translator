@@ -9,14 +9,17 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 const genAI = new GoogleGenerativeAI("AIzaSyC6nd4SfaYlQAFyBlLR9mF26Bo7MEDf9T0");
 
 const manifest = {
-  id: "org.vibe.translator",
-  version: "1.0.0",
-  name: "Persian Gemini",
-  description: "Auto Persian subtitles via Gemini",
-  resources: ["subtitles"],
-  types: ["movie"],
-  subtitles: ["fa"],
-  catalogs: []
+  "id": "org.vibe.translator",
+  "version": "1.0.0",
+  "name": "Persian Gemini",
+  "description": "Auto Persian subtitles via Gemini",
+  "resources": ["subtitles"],
+  "types": ["movie"],
+  "subtitles": ["fa"],
+  "catalogs": [],
+  "behaviorHints": {
+    "configurationRequired": false
+  }
 };
 
 const builder = new addonBuilder(manifest);
